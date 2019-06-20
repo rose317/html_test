@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script type="text/javascript">
+		window.onload = function(){
+			var oDiv = document.getElementById('box');
+
+			var iLeft = 0;
+			speed = 3
+			var timer = setInterval(moving,30);
+			function moving(){
+				iLeft += speed;
+				box.style.left = iLeft + 'px';
+				if(iLeft>700){
+					speed = -3;
+				}
+				else if(iLeft<0){
+					speed = 3;
+				}
+			}
+		}
+	</script>
+	<style type="text/css">
+		.div1{
+			width: 200px;
+			height: 200px;
+			left: 0;
+			top: 200px;
+			position: absolute;
+			background-color: gold;
+		}
+	</style>
+</head>
+<body>
+	<div class="div1" id="box"></div>
+	
+</body>
+</html>

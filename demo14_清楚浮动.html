@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		.list{
+			width: 210px;
+			border:1px solid #000;
+			margin-top: 50px auto 0px;
+			padding: 0px;
+			list-style: none;
+			/* 
+            第一种解决方法
+			overflow:hidden; */
+		}
+
+		.list li{
+			width: 50px;
+			height: 50px;
+			margin: 10px;
+			background-color: gold;
+			float: left;
+		}
+
+        /* 这是同时清楚浮动和margin-top塌陷   */
+		.clearfix:before,.clearfix:after{
+			content: "";
+			display:table;
+		}
+
+		.clearfix:after{
+			clear: both;
+		}
+		/* 这是做IE浏览器的优化，可能IE识别不了before，after  */
+		.clearfix{
+			zoom:1;
+		}
+	</style>
+</head>
+<body>
+	<ul class="list clearfix">
+		<li></li>
+		<li></li>
+		<li></li>
+		<li></li>
+		<li></li>
+		<li></li>
+		<li></li>
+		<li></li>
+		<li></li>
+		<li></li>
+		<li></li>
+		<!--
+
+        第二种清楚浮动的方法
+		<div style="clear: both;"></div> -->
+	</ul>
+	
+</body>
+</html>

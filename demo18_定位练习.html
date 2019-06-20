@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script type="text/javascript">
+		window.onload = function(){
+			var oDiv = document.getElementById('popup1');
+			var timer = setInterval(bounce,3000);
+			function bounce(){
+				popup1.style = "display:block";
+
+			}
+		}
+	</script>
+	<style>
+		.menu{
+			width: 960px;
+			height: 80px;
+			background-color: gold;
+			position: fixed;
+			top: 0px;
+			left: 50%;
+			margin-left: -480px;
+		}
+
+		p{
+			text-align: center;
+		}
+
+		.popup{
+			width: 500px;
+			height: 300px;
+			border: 10px solid #000;
+			background-color: #fff;
+			display: none;
+
+		}
+		.popup h2{
+			background-color: red;
+		}
+	</style>
+</head>
+<body>
+	<div class="menu">
+		菜单
+	</div>
+	<div class="popup" id='popup1'>
+		<h2>弹框标题</h2>
+	</div>
+	<p>网页文字</p>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<p>网页文字</p>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<p>网页文字</p>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<p>网页文字</p>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+</body>
+</html>

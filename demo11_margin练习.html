@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>margin练习</title>
+	<style>
+		/* 解决margin-top塌陷 */
+		.clearfix:before{
+			content: " ";
+			display: table;
+		}
+		.box1{
+			width: 200px;
+			height: 200px;
+			background-color: yellow;
+		}
+		.box2{
+			width: 120px;
+			height: 50px;
+			background-color: green;
+			margin: 75px auto;
+		}
+	</style>
+</head>
+<body>
+	<div class="box1 clearfix">
+		<div class="box2"></div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script type="text/javascript">
+		function fnMydiv(){
+			alert("div")
+		}
+
+		function fnButton(){
+			var oAn = document.getElementById("div1")
+			oAn.style.fontSize = "30px";
+			oAn.style.color = "red";
+
+		}
+
+	</script>
+</head>
+<body>
+	<div id="div1" onclick="fnMydiv()">这是一个div</div>
+	<input type="button" name="" value="这是一个按钮" onclick="fnButton()">
+	
+</body>
+</html>

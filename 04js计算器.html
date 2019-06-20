@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script type="text/javascript">
+		window.onload = function(){
+			var oInput1 = document.getElementById('input01');
+			var oInput2 = document.getElementById('input02');
+			var oBtn = document.getElementById('btn');
+
+			oBtn.onclick = function(){
+
+				var iVal01 = praseInt(oInput1.value);
+				var iVal02 = praseInt(oInput2.value);
+				alert(iVal01+iVal02);
+			}
+
+		}
+	</script>
+</head>
+<body>
+	<input type="text" name="" id="input01"> +
+	<input type="text" name="" id="input02">
+	<input type="button" name="" value="提交" id="btn">
+	
+</body>
+</html>
